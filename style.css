@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body,
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f2ebe3;
+    font-size: 14px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.cart img{
+    width: 75%;
+    height: 100%;
+    border-radius: 8px 0 0; 
+}
+.cart{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    border-radius: 8px;
+}
+.cart .content{
+    width: 50%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    color: #6c7289;
+}
+.cart .content h2{
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+.cart .content p{
+    line-height: 23px;
+}
+.cart .content h1{
+    font-size: 35px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #1c232b;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price h5{
+    color:#3c8067;
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin: 15px 0;
+    margin-right: 25px;
+}
+.old_price{
+    position: relative;
+
+}
+.old_price .line{
+    width: 100%;
+    border: 0.1px solid ;
+    position: absolute;
+    top: 8px;
+    
+}
+.cart .content button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3c8067;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.cart .content button span{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.cart .content button:hover{
+    background-color: #0e4732;
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 768px) {
+    .cart{
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+    .cart img{
+        width: 100%;
+        height: 50%;
+        border-radius: 8px 0 0;
+        margin: 0 auto;
+    }
+    .cart .content{
+        width: 100%;
+        margin: 0 auto;
+    }
+       
+}
+@media screen and (min-width:769px) and (max-width:945px) {
+    .cart{
+        display: flex;
+        margin: 0 auto;
+    }
+    .cart .content{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
